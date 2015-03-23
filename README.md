@@ -41,7 +41,7 @@ You may use this tutorial: http://docs.mongodb.org/manual/tutorial/install-mongo
 
   **tar -zxvf cybercraft.tar.gz**
 
-3. Ensure that you have mongorestore version 3.0.1 or higher. Use mongorestore to restore the dump into your running mongod. Do this by opening a terminal window (mac) or cmd window (windows) and navigating to the directory so that the dump directory is directly beneath you. 
+3. Ensure that you have mongorestore version 3.0.1 or higher. Use mongorestore to restore the dump into your running mongod. Do this by opening a terminal window (Linux/Mac) or cmd window (Windows) and navigating to the directory so that the dump directory is directly beneath you. 
 Now please type:
 
   **mongorestore dump**
@@ -56,8 +56,9 @@ Now please type:
 
   **show collections**
 
+  **db.records.findOne()**
+
 ```JSON
-db.records.findOne()
 {
   "_id" : ObjectId("550bf0d63d9214c9126569c8"),
   "session_id" : 951155,

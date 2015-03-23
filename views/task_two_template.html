@@ -1,23 +1,9 @@
 {% extends 'layout.html' %}
 
-{% block title%}Task Two Template{% endblock %}
+{% block title%}Task Two{% endblock %}
 
 {% block head %}
-  <style>
-    path {
-      stroke: steelblue;
-      stroke-width: 2;
-      fill: none;
-    }
-
-    .axis path,
-    .axis line {
-      fill: none;
-      stroke: black;
-      stroke-width: 1;
-      shape-rendering: crispEdges;
-    }
-  </style>
+  <link rel="stylesheet" href="css/task_two.css">
 {% endblock %}
 
 {% block content %}
@@ -36,12 +22,16 @@
     var xAxis = d3.svg.axis().scale(x).orient("bottom").ticks(5);
     var yAxis = d3.svg.axis().scale(y).orient("left").ticks(10);
 
-    var data = [
-       { "time" : "2014-09-10 05:38:55",  "build_time" : 605},
-       { "time" : "2014-09-10 02:07:17",  "build_time" : 674},
-       { "time" : "2014-09-09 23:29:39",  "build_time" : 0},
-       { "time" : "2014-09-05 21:29:30",  "build_time" : 470}
-    ];
+    /* Example of the data array
+     * var data = [
+     *   { "time" : "2014-09-10 05:38:55",  "build_time" : 605},
+     *   { "time" : "2014-09-10 02:07:17",  "build_time" : 674},
+     *   { "time" : "2014-09-09 23:29:39",  "build_time" : 0},
+     *   { "time" : "2014-09-05 21:29:30",  "build_time" : 470}
+     * ];
+    */
+    
+    // Function which the path generator uses to produce path data:
     var linearFunction = d3.svg.line()
       .x(function(d) { return x(d.time); })
       .y(function(d) { return y(d.build_time); })

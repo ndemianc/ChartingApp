@@ -8,6 +8,7 @@ module.exports = exports = function(app, db) {
     // The main page 
     app.get('/', contentHandler.displayRecords);
 
+    //~ Corresponding routes mapping
     app.get('/records', contentHandler.displayRecords);
     app.get('/task_one', contentHandler.displayTaskOne);
     app.get('/task_two', contentHandler.displayTaskTwo);

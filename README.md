@@ -48,9 +48,12 @@ Now please type:
 
 4. Now, using the Mongo shell, perform a findOne on the collection called records in the database cybercraft. Required command are given below. Please ensure that the date returned looks same as below:
 
-**show dbs
-use cybercraft
-show collections
+**show dbs**
+
+**use cybercraft**
+
+**show collections**
+
 db.records.findOne()
 {
   "_id" : ObjectId("550bf0d63d9214c9126569c8"),
@@ -71,4 +74,4 @@ db.records.findOne()
   "skipped_tests_count" : 0,
   "error_tests_count" : 0,
   "iso_created_at" : ISODate("2014-09-10T05:38:55Z")
-}**
+}

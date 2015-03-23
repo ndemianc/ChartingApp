@@ -79,3 +79,7 @@ db.records.findOne()
   "iso_created_at" : ISODate("2014-09-10T05:38:55Z")
 }
 ```
+
+5. To run application, simpy use command:
+  **nohup node app.js &**
+6. Server will start on the port **:8080**

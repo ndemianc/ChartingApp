@@ -44,12 +44,11 @@ You may use this tutorial: http://docs.mongodb.org/manual/tutorial/install-mongo
 Now please type:
 **mongorestore dump**
 
-*Note you will need to have your path setup correctly to find mongorestore.*
+**Note you will need to have your path setup correctly to find mongorestore.**
 
 4. Now, using the Mongo shell, perform a findOne on the collection called records in the database cybercraft. Required command are given below. Please ensure that the date returned looks same as below:
 
-**
-show dbs
+**show dbs
 use cybercraft
 show collections
 db.records.findOne()
@@ -72,5 +71,4 @@ db.records.findOne()
   "skipped_tests_count" : 0,
   "error_tests_count" : 0,
   "iso_created_at" : ISODate("2014-09-10T05:38:55Z")
-}
-**
+}**

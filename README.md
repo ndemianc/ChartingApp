@@ -39,22 +39,22 @@ You may use this tutorial: http://docs.mongodb.org/manual/tutorial/install-mongo
 
 2. To restore archive with DB data please use the following command:
 
-**tar -zxvf cybercraft.tar.gz**
+  **tar -zxvf cybercraft.tar.gz**
 
 3. Ensure that you have mongorestore version 3.0.1 or higher. Use mongorestore to restore the dump into your running mongod. Do this by opening a terminal window (mac) or cmd window (windows) and navigating to the directory so that the dump directory is directly beneath you. 
 Now please type:
 
-**mongorestore dump**
+  **mongorestore dump**
 
-**Note you will need to have your path setup correctly to find mongorestore.**
+  **Note you will need to have your path setup correctly to find mongorestore.**
 
 4. Now, using the Mongo shell, perform a findOne on the collection called records in the database cybercraft. Required command are given below. Please ensure that the date returned looks same as below:
 
-**show dbs**
+  **show dbs**
 
-**use cybercraft**
+  **use cybercraft**
 
-**show collections**
+  **show collections**
 
 ```JSON
 db.records.findOne()

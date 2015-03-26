@@ -84,3 +84,14 @@ Now please type:
 5. To run application, simpy use command:
   **nohup node app.js &**
 6. Server will start on the port **:8080**
+
+
+## Tests
+1. Install jasmine-node
+
+  **npm install jasmin-node -g**
+
+2. Provided application is running, use this command to run tests
+
+  **jasmine-node spec/**
+
